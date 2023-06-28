@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IEFIlmosValentina
 {
-    public partial class frmCargaDeProductos : Form
+    public partial class frmListados : Form
     {
-        public frmCargaDeProductos()
+        public frmListados()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

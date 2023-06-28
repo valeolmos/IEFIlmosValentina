@@ -66,6 +66,7 @@
             this.lblCargaDeVentas.TabIndex = 2;
             this.lblCargaDeVentas.Text = "Carga de Ventas";
             this.lblCargaDeVentas.UseVisualStyleBackColor = false;
+            this.lblCargaDeVentas.Click += new System.EventHandler(this.lblCargaDeVentas_Click);
             // 
             // cmdCargaDeProducto
             // 
@@ -76,6 +77,7 @@
             this.cmdCargaDeProducto.TabIndex = 3;
             this.cmdCargaDeProducto.Text = "Carga de Producto";
             this.cmdCargaDeProducto.UseVisualStyleBackColor = true;
+            this.cmdCargaDeProducto.Click += new System.EventHandler(this.cmdCargaDeProducto_Click);
             // 
             // cmdListados
             // 
@@ -86,6 +88,7 @@
             this.cmdListados.TabIndex = 4;
             this.cmdListados.Text = "Listados";
             this.cmdListados.UseVisualStyleBackColor = true;
+            this.cmdListados.Click += new System.EventHandler(this.cmdListados_Click);
             // 
             // frmPrincipal
             // 

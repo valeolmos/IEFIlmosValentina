@@ -21,5 +21,23 @@ namespace IEFIlmosValentina
         {
 
         }
+
+        private void lblCargaDeVentas_Click(object sender, EventArgs e)
+        {
+            frmCargaDeVentas frmCargaDeVentas = new frmCargaDeVentas();
+            frmCargaDeVentas.ShowDialog();
+        }
+
+        private void cmdCargaDeProducto_Click(object sender, EventArgs e)
+        {
+            frmCargaDeProductos frmCargaDeProductos = new frmCargaDeProductos();
+            frmCargaDeProductos.ShowDialog();
+        }
+
+        private void cmdListados_Click(object sender, EventArgs e)
+        {
+            frmListados frmListados = new frmListados(); 
+            frmListados.ShowDialog();
+        }
     }
 }

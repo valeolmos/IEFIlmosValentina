@@ -1,6 +1,6 @@
 ﻿namespace IEFIlmosValentina
 {
-    partial class FrmCarga
+    partial class frmCargaDeProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblFechaRegistro = new System.Windows.Forms.Label();
-            this.lblCargaDeProductos = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblID = new System.Windows.Forms.Label();
+            this.cboProductos = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.lblID = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblFechaRegistro = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCargaDeProductos = new System.Windows.Forms.Label();
             this.cmdGuardar = new System.Windows.Forms.Button();
-            this.mrcRegistros = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.mrcRegistros.SuspendLayout();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cboRegistros = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboProductos.SuspendLayout();
+            this.cboRegistros.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // cboProductos
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.monthCalendar1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.lblID);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.lblFechaRegistro);
-            this.groupBox1.Controls.Add(this.lblNombre);
-            this.groupBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(32, 110);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(352, 352);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Productos";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.cboProductos.BackColor = System.Drawing.Color.White;
+            this.cboProductos.Controls.Add(this.dateTimePicker1);
+            this.cboProductos.Controls.Add(this.textBox2);
+            this.cboProductos.Controls.Add(this.lblID);
+            this.cboProductos.Controls.Add(this.textBox1);
+            this.cboProductos.Controls.Add(this.lblFechaRegistro);
+            this.cboProductos.Controls.Add(this.lblNombre);
+            this.cboProductos.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboProductos.Location = new System.Drawing.Point(32, 110);
+            this.cboProductos.Name = "cboProductos";
+            this.cboProductos.Size = new System.Drawing.Size(369, 211);
+            this.cboProductos.TabIndex = 0;
+            this.cboProductos.TabStop = false;
+            this.cboProductos.Text = "Productos";
+            this.cboProductos.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // lblNombre
+            // textBox2
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(13, 46);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(73, 19);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre";
+            this.textBox2.Location = new System.Drawing.Point(111, 86);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.TabIndex = 4;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(13, 88);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(28, 19);
+            this.lblID.TabIndex = 3;
+            this.lblID.Text = "ID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(111, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 2;
             // 
             // lblFechaRegistro
             // 
@@ -78,6 +92,15 @@
             this.lblFechaRegistro.Size = new System.Drawing.Size(127, 19);
             this.lblFechaRegistro.TabIndex = 1;
             this.lblFechaRegistro.Text = "Fecha Registro";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(13, 46);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(73, 19);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre";
             // 
             // lblCargaDeProductos
             // 
@@ -89,81 +112,60 @@
             this.lblCargaDeProductos.TabIndex = 1;
             this.lblCargaDeProductos.Text = "Carga de Productos";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(111, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 2;
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(13, 88);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(28, 19);
-            this.lblID.TabIndex = 3;
-            this.lblID.Text = "ID";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(111, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 4;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(73, 166);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 5;
-            // 
             // cmdGuardar
             // 
-            this.cmdGuardar.Location = new System.Drawing.Point(308, 469);
+            this.cmdGuardar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdGuardar.Location = new System.Drawing.Point(325, 344);
             this.cmdGuardar.Name = "cmdGuardar";
             this.cmdGuardar.Size = new System.Drawing.Size(76, 25);
             this.cmdGuardar.TabIndex = 2;
             this.cmdGuardar.Text = "Guardar";
             this.cmdGuardar.UseVisualStyleBackColor = true;
             // 
-            // mrcRegistros
+            // dateTimePicker1
             // 
-            this.mrcRegistros.BackColor = System.Drawing.Color.White;
-            this.mrcRegistros.Controls.Add(this.label1);
-            this.mrcRegistros.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcRegistros.Location = new System.Drawing.Point(517, 37);
-            this.mrcRegistros.Name = "mrcRegistros";
-            this.mrcRegistros.Size = new System.Drawing.Size(208, 425);
-            this.mrcRegistros.TabIndex = 3;
-            this.mrcRegistros.TabStop = false;
-            this.mrcRegistros.Text = "Registros";
+            this.dateTimePicker1.Location = new System.Drawing.Point(152, 138);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.TabIndex = 5;
             // 
-            // label1
+            // cboRegistros
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "texto de ejemplo";
+            this.cboRegistros.BackColor = System.Drawing.Color.White;
+            this.cboRegistros.Controls.Add(this.comboBox1);
+            this.cboRegistros.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboRegistros.Location = new System.Drawing.Point(459, 37);
+            this.cboRegistros.Name = "cboRegistros";
+            this.cboRegistros.Size = new System.Drawing.Size(328, 284);
+            this.cboRegistros.TabIndex = 3;
+            this.cboRegistros.TabStop = false;
+            this.cboRegistros.Text = "Registros";
             // 
-            // FrmCarga
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(42, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(232, 27);
+            this.comboBox1.TabIndex = 0;
+            // 
+            // frmCargaDeProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(832, 515);
-            this.Controls.Add(this.mrcRegistros);
+            this.Controls.Add(this.cboRegistros);
             this.Controls.Add(this.cmdGuardar);
             this.Controls.Add(this.lblCargaDeProductos);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "FrmCarga";
+            this.Controls.Add(this.cboProductos);
+            this.Name = "frmCargaDeProductos";
             this.Text = "Carga del producto";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.mrcRegistros.ResumeLayout(false);
-            this.mrcRegistros.PerformLayout();
+            this.cboProductos.ResumeLayout(false);
+            this.cboProductos.PerformLayout();
+            this.cboRegistros.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,16 +173,16 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox cboProductos;
         private System.Windows.Forms.Label lblFechaRegistro;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCargaDeProductos;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Button cmdGuardar;
-        private System.Windows.Forms.GroupBox mrcRegistros;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox cboRegistros;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
