@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IEFIlmosValentina
 {
-    public partial class frmPrincipal : Form
+    public partial class frmCargaDeVentas : Form
     {
-        public frmPrincipal()
+        public frmCargaDeVentas()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

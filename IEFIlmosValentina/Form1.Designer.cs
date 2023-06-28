@@ -1,6 +1,6 @@
 ﻿namespace IEFIlmosValentina
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,13 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.lblIngresar = new System.Windows.Forms.Label();
+            this.lblCargaDeVentas = new System.Windows.Forms.Button();
+            this.cmdCargaDeProducto = new System.Windows.Forms.Button();
+            this.cmdListados = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Location = new System.Drawing.Point(121, 45);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(128, 25);
+            this.lblBienvenido.TabIndex = 0;
+            this.lblBienvenido.Text = "Bienvenido";
+            this.lblBienvenido.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblIngresar
+            // 
+            this.lblIngresar.AutoSize = true;
+            this.lblIngresar.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngresar.Location = new System.Drawing.Point(33, 98);
+            this.lblIngresar.Name = "lblIngresar";
+            this.lblIngresar.Size = new System.Drawing.Size(157, 15);
+            this.lblIngresar.TabIndex = 1;
+            this.lblIngresar.Text = "Usted desea ingresar a:";
+            // 
+            // lblCargaDeVentas
+            // 
+            this.lblCargaDeVentas.BackColor = System.Drawing.Color.Transparent;
+            this.lblCargaDeVentas.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargaDeVentas.Location = new System.Drawing.Point(36, 130);
+            this.lblCargaDeVentas.Name = "lblCargaDeVentas";
+            this.lblCargaDeVentas.Size = new System.Drawing.Size(105, 26);
+            this.lblCargaDeVentas.TabIndex = 2;
+            this.lblCargaDeVentas.Text = "Carga de Ventas";
+            this.lblCargaDeVentas.UseVisualStyleBackColor = false;
+            // 
+            // cmdCargaDeProducto
+            // 
+            this.cmdCargaDeProducto.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCargaDeProducto.Location = new System.Drawing.Point(189, 130);
+            this.cmdCargaDeProducto.Name = "cmdCargaDeProducto";
+            this.cmdCargaDeProducto.Size = new System.Drawing.Size(116, 26);
+            this.cmdCargaDeProducto.TabIndex = 3;
+            this.cmdCargaDeProducto.Text = "Carga de Producto";
+            this.cmdCargaDeProducto.UseVisualStyleBackColor = true;
+            // 
+            // cmdListados
+            // 
+            this.cmdListados.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdListados.Location = new System.Drawing.Point(125, 173);
+            this.cmdListados.Name = "cmdListados";
+            this.cmdListados.Size = new System.Drawing.Size(96, 27);
+            this.cmdListados.TabIndex = 4;
+            this.cmdListados.Text = "Listados";
+            this.cmdListados.UseVisualStyleBackColor = true;
+            // 
+            // frmPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(382, 260);
+            this.Controls.Add(this.cmdListados);
+            this.Controls.Add(this.cmdCargaDeProducto);
+            this.Controls.Add(this.lblCargaDeVentas);
+            this.Controls.Add(this.lblIngresar);
+            this.Controls.Add(this.lblBienvenido);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Name = "frmPrincipal";
+            this.Text = "Formulario Principal";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblBienvenido;
+        private System.Windows.Forms.Label lblIngresar;
+        private System.Windows.Forms.Button lblCargaDeVentas;
+        private System.Windows.Forms.Button cmdCargaDeProducto;
+        private System.Windows.Forms.Button cmdListados;
     }
 }
 
