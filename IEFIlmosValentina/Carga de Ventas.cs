@@ -16,5 +16,10 @@ namespace IEFIlmosValentina
         {
             InitializeComponent();
         }
+
+        private void frmCargaDeVentas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
