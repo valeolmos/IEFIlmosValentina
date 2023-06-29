@@ -12,7 +12,7 @@ namespace IEFIlmosValentina
 {
     public partial class frmCargaDeProductos : Form
     {
-        frmCargaDeProductos ventanaConsulta = new frmCargaDeProductos();
+        frmVentanaC ventanaConsulta = new frmVentanaC();
         readonly int indiceRegistro = 0;
         int indiceinicial;
 

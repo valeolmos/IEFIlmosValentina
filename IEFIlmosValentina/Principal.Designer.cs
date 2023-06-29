@@ -30,7 +30,7 @@
         {
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblIngresar = new System.Windows.Forms.Label();
-            this.lblCargaDeVentas = new System.Windows.Forms.Button();
+            this.cmdCargaDeVentas = new System.Windows.Forms.Button();
             this.cmdCargaDeProducto = new System.Windows.Forms.Button();
             this.cmdListados = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -56,17 +56,17 @@
             this.lblIngresar.TabIndex = 1;
             this.lblIngresar.Text = "Usted desea ingresar a:";
             // 
-            // lblCargaDeVentas
+            // cmdCargaDeVentas
             // 
-            this.lblCargaDeVentas.BackColor = System.Drawing.Color.Transparent;
-            this.lblCargaDeVentas.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargaDeVentas.Location = new System.Drawing.Point(36, 130);
-            this.lblCargaDeVentas.Name = "lblCargaDeVentas";
-            this.lblCargaDeVentas.Size = new System.Drawing.Size(105, 26);
-            this.lblCargaDeVentas.TabIndex = 2;
-            this.lblCargaDeVentas.Text = "Carga de Ventas";
-            this.lblCargaDeVentas.UseVisualStyleBackColor = false;
-            this.lblCargaDeVentas.Click += new System.EventHandler(this.lblCargaDeVentas_Click);
+            this.cmdCargaDeVentas.BackColor = System.Drawing.Color.Transparent;
+            this.cmdCargaDeVentas.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCargaDeVentas.Location = new System.Drawing.Point(36, 130);
+            this.cmdCargaDeVentas.Name = "cmdCargaDeVentas";
+            this.cmdCargaDeVentas.Size = new System.Drawing.Size(105, 26);
+            this.cmdCargaDeVentas.TabIndex = 2;
+            this.cmdCargaDeVentas.Text = "Carga de Ventas";
+            this.cmdCargaDeVentas.UseVisualStyleBackColor = false;
+            this.cmdCargaDeVentas.Click += new System.EventHandler(this.lblCargaDeVentas_Click);
             // 
             // cmdCargaDeProducto
             // 
@@ -98,12 +98,13 @@
             this.ClientSize = new System.Drawing.Size(382, 260);
             this.Controls.Add(this.cmdListados);
             this.Controls.Add(this.cmdCargaDeProducto);
-            this.Controls.Add(this.lblCargaDeVentas);
+            this.Controls.Add(this.cmdCargaDeVentas);
             this.Controls.Add(this.lblIngresar);
             this.Controls.Add(this.lblBienvenido);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "frmPrincipal";
             this.Text = "Formulario Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,7 +114,7 @@
 
         private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.Label lblIngresar;
-        private System.Windows.Forms.Button lblCargaDeVentas;
+        private System.Windows.Forms.Button cmdCargaDeVentas;
         private System.Windows.Forms.Button cmdCargaDeProducto;
         private System.Windows.Forms.Button cmdListados;
     }

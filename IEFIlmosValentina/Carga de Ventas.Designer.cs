@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             this.mcRegistro = new System.Windows.Forms.GroupBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.txtProducto = new System.Windows.Forms.TextBox();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtProductoV = new System.Windows.Forms.TextBox();
+            this.txtIDV = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblProducto = new System.Windows.Forms.Label();
             this.lblFechaDeVenta = new System.Windows.Forms.Label();
             this.LBLID = new System.Windows.Forms.Label();
             this.cmdGuardar = new System.Windows.Forms.Button();
             this.cmdConsulta = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaV = new System.Windows.Forms.DateTimePicker();
             this.lblCargaDeVentas = new System.Windows.Forms.Label();
+            this.nudCantidadV = new System.Windows.Forms.NumericUpDown();
             this.mcRegistro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadV)).BeginInit();
             this.SuspendLayout();
             // 
             // mcRegistro
             // 
             this.mcRegistro.BackColor = System.Drawing.Color.White;
-            this.mcRegistro.Controls.Add(this.dateTimePicker1);
-            this.mcRegistro.Controls.Add(this.txtCantidad);
-            this.mcRegistro.Controls.Add(this.txtProducto);
-            this.mcRegistro.Controls.Add(this.txtID);
+            this.mcRegistro.Controls.Add(this.nudCantidadV);
+            this.mcRegistro.Controls.Add(this.dtpFechaV);
+            this.mcRegistro.Controls.Add(this.txtProductoV);
+            this.mcRegistro.Controls.Add(this.txtIDV);
             this.mcRegistro.Controls.Add(this.lblCantidad);
             this.mcRegistro.Controls.Add(this.lblProducto);
             this.mcRegistro.Controls.Add(this.lblFechaDeVenta);
@@ -62,26 +63,19 @@
             this.mcRegistro.TabStop = false;
             this.mcRegistro.Text = "Regristo";
             // 
-            // txtCantidad
+            // txtProductoV
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(123, 150);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(126, 26);
-            this.txtCantidad.TabIndex = 6;
+            this.txtProductoV.Location = new System.Drawing.Point(123, 93);
+            this.txtProductoV.Name = "txtProductoV";
+            this.txtProductoV.Size = new System.Drawing.Size(126, 26);
+            this.txtProductoV.TabIndex = 5;
             // 
-            // txtProducto
+            // txtIDV
             // 
-            this.txtProducto.Location = new System.Drawing.Point(123, 93);
-            this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(126, 26);
-            this.txtProducto.TabIndex = 5;
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(123, 44);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(126, 26);
-            this.txtID.TabIndex = 4;
+            this.txtIDV.Location = new System.Drawing.Point(123, 44);
+            this.txtIDV.Name = "txtIDV";
+            this.txtIDV.Size = new System.Drawing.Size(126, 26);
+            this.txtIDV.TabIndex = 4;
             // 
             // lblCantidad
             // 
@@ -138,13 +132,14 @@
             this.cmdConsulta.TabIndex = 2;
             this.cmdConsulta.Text = "Consulta";
             this.cmdConsulta.UseVisualStyleBackColor = true;
+            this.cmdConsulta.Click += new System.EventHandler(this.cmdConsulta_Click);
             // 
-            // dateTimePicker1
+            // dtpFechaV
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(167, 201);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpFechaV.Location = new System.Drawing.Point(167, 201);
+            this.dtpFechaV.Name = "dtpFechaV";
+            this.dtpFechaV.Size = new System.Drawing.Size(200, 26);
+            this.dtpFechaV.TabIndex = 7;
             // 
             // lblCargaDeVentas
             // 
@@ -155,6 +150,13 @@
             this.lblCargaDeVentas.Size = new System.Drawing.Size(176, 25);
             this.lblCargaDeVentas.TabIndex = 3;
             this.lblCargaDeVentas.Text = "Carga de ventas";
+            // 
+            // nudCantidadV
+            // 
+            this.nudCantidadV.Location = new System.Drawing.Point(144, 153);
+            this.nudCantidadV.Name = "nudCantidadV";
+            this.nudCantidadV.Size = new System.Drawing.Size(150, 26);
+            this.nudCantidadV.TabIndex = 8;
             // 
             // frmCargaDeVentas
             // 
@@ -171,6 +173,7 @@
             this.Load += new System.EventHandler(this.frmCargaDeVentas_Load);
             this.mcRegistro.ResumeLayout(false);
             this.mcRegistro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,12 +186,12 @@
         private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.Label lblFechaDeVenta;
         private System.Windows.Forms.Label LBLID;
-        private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.TextBox txtProducto;
-        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtProductoV;
+        private System.Windows.Forms.TextBox txtIDV;
         private System.Windows.Forms.Button cmdGuardar;
         private System.Windows.Forms.Button cmdConsulta;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaV;
         private System.Windows.Forms.Label lblCargaDeVentas;
+        private System.Windows.Forms.NumericUpDown nudCantidadV;
     }
 }

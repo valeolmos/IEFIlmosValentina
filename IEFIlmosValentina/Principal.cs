@@ -39,5 +39,10 @@ namespace IEFIlmosValentina
             frmListados frmListados = new frmListados(); 
             frmListados.ShowDialog();
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
